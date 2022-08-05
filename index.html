@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+  </head>
+
+  <body>
+
+    <div id="export-svg">
+
+      <h2>Export SVG</h2>
+      <div class="wrapper">
+        <div id="outer">
+          <h3>outer stroke</h3>
+          <svg width="164" height="100" viewBox="0 0 164 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="5" width="154" height="90" fill="#D9D9D9" stroke="black" stroke-width="10" />
+          </svg>
+          <p>164 x 100</p>
+        </div>
+        <div id="center">
+          <h3>center stroke</h3>
+          <svg width="154" height="90" viewBox="0 0 154 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="5" width="144" height="80" fill="#D9D9D9" stroke="black" stroke-width="10" />
+          </svg>
+          <p>154 x 100</p>
+        </div>
+        <div id="inner">
+          <h3>inner stroke</h3>
+          <svg width="144" height="80" viewBox="0 0 144 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="5" width="134" height="70" fill="#D9D9D9" stroke="black" stroke-width="10" />
+          </svg>
+          <p>144 x 100</p>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div id="inclouded-outer">
+          <h3>outer stroke : inclouded</h3>
+          <svg width="164" height="100" viewBox="0 0 164 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="144" height="80" fill="#D9D9D9" />
+            <rect x="5" y="5" width="154" height="90" stroke="black" stroke-width="10" />
+          </svg>
+          <p>164 x 100</p>
+        </div>
+        <div id="inclouded-center">
+          <h3>center stroke : inclouded</h3>
+          <svg width="164" height="100" viewBox="0 0 164 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="144" height="80" fill="#D9D9D9" />
+            <rect x="5" y="5" width="154" height="90" stroke="black" stroke-width="10" />
+          </svg>
+          <p>164 x 100</p>
+        </div>
+        <div id="inclouded-inner">
+          <h3>inner stroke : inclouded</h3>
+          <svg width="164" height="100" viewBox="0 0 164 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="144" height="80" fill="#D9D9D9" />
+            <rect x="5" y="5" width="154" height="90" stroke="black" stroke-width="10" />
+          </svg>
+          <p>164 x 100</p>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div id="exclouded-outer">
+          <h3>outer stroke : exclouded</h3>
+          <svg width="164" height="100" viewBox="0 0 164 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="144" height="80" fill="#D9D9D9" />
+            <rect x="5" y="5" width="154" height="90" stroke="black" stroke-width="10" />
+          </svg>
+          <p>164 x 100</p>
+        </div>
+        <div id="center-exclouded">
+          <h3>center stroke : exclouded</h3>
+          <svg width="154" height="90" viewBox="0 0 154 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="5" width="144" height="80" fill="#D9D9D9" />
+            <rect x="5" y="5" width="144" height="80" stroke="black" stroke-width="10" />
+          </svg>
+          <p>154 x 100</p>
+        </div>
+        <div id="inner-exclouded">
+          <h3>inner stroke : exclouded</h3>
+          <svg width="144" height="80" viewBox="0 0 144 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="144" height="80" fill="#D9D9D9" />
+            <rect x="5" y="5" width="134" height="70" stroke="black" stroke-width="10" />
+          </svg>
+
+          <p>144 x 100</p>
+        </div>
+      </div>
+
+    </div>
+
+    <hr />
+
+    <div id="export-css">
+      <h2>Export CSS</h2>
+      <div class="wrapper">
+        <div id="outer-css">
+          <h3>outer stroke</h3>
+          <div class="box"></div>
+          <p>164 x 100</p>
+        </div>
+        <div id="center-css">
+          <h3>center stroke</h3>
+          <div class="box"></div>
+          <p>164 x 100</p>
+        </div>
+        <div id="inner-css">
+          <h3>inner stroke</h3>
+          <div class="box"></div>
+          <p>144 x 100</p>
+        </div>
+      </div>
+
+      <div class="wrapper">
+        <div id="inclouded-outer-css">
+          <h3>outer stroke : inclouded</h3>
+          <div class="box"></div>
+          <p>164 x 100</p>
+        </div>
+        <div id="inclouded-center-css">
+          <h3>center stroke : inclouded</h3>
+          <div class="box"></div>
+          <p>174 x 100</p>
+        </div>
+        <div id="inclouded-inner-css">
+          <h3>inner stroke : inclouded</h3>
+          <div class="box"></div>
+          <p>164 x 100</p>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div id="exclouded-outer-css">
+          <h3>outer stroke : exclouded</h3>
+          <div class="box"></div>
+          <p>164 x 100</p>
+        </div>
+        <div id="exclouded-center-css">
+          <h3>center stroke : exclouded</h3>
+          <div class="box"></div>
+          <p>154 x 100</p>
+        </div>
+        <div id="exclouded-inner-css">
+          <h3>inner stroke : exclouded</h3>
+          <div class="box"></div>
+
+          <p>144 x 100</p>
+        </div>
+      </div>
+    </div>
+
+  </body>
+
+</html>
