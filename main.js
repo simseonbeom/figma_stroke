@@ -13,11 +13,10 @@ tl.from('.wrapper > div', {
 let clicked = true;
 
 function targetFunc(e) {
+  e.stopPropagation();
   let elem = e.target;
 
   while (!elem.getAttribute('data-name')) {
-    console.log('없어');
-
     elem = elem.parentNode;
 
     if (elem.nodeName === 'BODY' || elem.nodeName === 'HR') {
