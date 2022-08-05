@@ -13,6 +13,7 @@ body {
 
 .wrapper > div {
   margin-right: 2vw;
+  cursor: pointer;
 }
 
 .wrapper > div:last-child {

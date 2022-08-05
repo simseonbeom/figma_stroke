@@ -8,7 +8,9 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 
+    <script src="./main.js" defer></script>
   </head>
 
   <body>
@@ -17,21 +19,21 @@
 
       <h2>Export SVG</h2>
       <div class="wrapper">
-        <div id="outer">
+        <div id="outer" data-name="target">
           <h3>outer stroke</h3>
           <svg width="164" height="100" viewBox="0 0 164 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="5" y="5" width="154" height="90" fill="#D9D9D9" stroke="black" stroke-width="10" />
           </svg>
           <p>164 x 100</p>
         </div>
-        <div id="center">
+        <div id="center" data-name="target">
           <h3>center stroke</h3>
           <svg width="154" height="90" viewBox="0 0 154 90" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="5" y="5" width="144" height="80" fill="#D9D9D9" stroke="black" stroke-width="10" />
           </svg>
           <p>154 x 100</p>
         </div>
-        <div id="inner">
+        <div id="inner" data-name="target">
           <h3>inner stroke</h3>
           <svg width="144" height="80" viewBox="0 0 144 80" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="5" y="5" width="134" height="70" fill="#D9D9D9" stroke="black" stroke-width="10" />
@@ -41,7 +43,7 @@
       </div>
 
       <div class="wrapper">
-        <div id="inclouded-outer">
+        <div id="inclouded-outer" data-name="target">
           <h3>outer stroke : inclouded</h3>
           <svg width="164" height="100" viewBox="0 0 164 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="10" y="10" width="144" height="80" fill="#D9D9D9" />
@@ -49,7 +51,7 @@
           </svg>
           <p>164 x 100</p>
         </div>
-        <div id="inclouded-center">
+        <div id="inclouded-center" data-name="target">
           <h3>center stroke : inclouded</h3>
           <svg width="164" height="100" viewBox="0 0 164 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="10" y="10" width="144" height="80" fill="#D9D9D9" />
@@ -57,7 +59,7 @@
           </svg>
           <p>164 x 100</p>
         </div>
-        <div id="inclouded-inner">
+        <div id="inclouded-inner" data-name="target">
           <h3>inner stroke : inclouded</h3>
           <svg width="164" height="100" viewBox="0 0 164 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="10" y="10" width="144" height="80" fill="#D9D9D9" />
@@ -68,7 +70,7 @@
       </div>
 
       <div class="wrapper">
-        <div id="exclouded-outer">
+        <div id="exclouded-outer" data-name="target">
           <h3>outer stroke : exclouded</h3>
           <svg width="164" height="100" viewBox="0 0 164 100" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="10" y="10" width="144" height="80" fill="#D9D9D9" />
@@ -76,7 +78,7 @@
           </svg>
           <p>164 x 100</p>
         </div>
-        <div id="center-exclouded">
+        <div id="center-exclouded" data-name="target">
           <h3>center stroke : exclouded</h3>
           <svg width="154" height="90" viewBox="0 0 154 90" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="5" y="5" width="144" height="80" fill="#D9D9D9" />
@@ -84,7 +86,7 @@
           </svg>
           <p>154 x 100</p>
         </div>
-        <div id="inner-exclouded">
+        <div id="inner-exclouded" data-name="target">
           <h3>inner stroke : exclouded</h3>
           <svg width="144" height="80" viewBox="0 0 144 80" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="144" height="80" fill="#D9D9D9" />
@@ -102,17 +104,17 @@
     <div id="export-css">
       <h2>Export CSS</h2>
       <div class="wrapper">
-        <div id="outer-css">
+        <div id="outer-css" data-name="target">
           <h3>outer stroke</h3>
           <div class="box"></div>
           <p>164 x 100</p>
         </div>
-        <div id="center-css">
+        <div id="center-css" data-name="target">
           <h3>center stroke</h3>
           <div class="box"></div>
           <p>164 x 100</p>
         </div>
-        <div id="inner-css">
+        <div id="inner-css" data-name="target">
           <h3>inner stroke</h3>
           <div class="box"></div>
           <p>144 x 100</p>
@@ -120,34 +122,34 @@
       </div>
 
       <div class="wrapper">
-        <div id="inclouded-outer-css">
+        <div id="inclouded-outer-css" data-name="target">
           <h3>outer stroke : inclouded</h3>
           <div class="box"></div>
           <p>164 x 100</p>
         </div>
-        <div id="inclouded-center-css">
+        <div id="inclouded-center-css" data-name="target">
           <h3>center stroke : inclouded</h3>
           <div class="box"></div>
           <p>174 x 100</p>
         </div>
-        <div id="inclouded-inner-css">
+        <div id="inclouded-inner-css" data-name="target">
           <h3>inner stroke : inclouded</h3>
           <div class="box"></div>
           <p>164 x 100</p>
         </div>
       </div>
       <div class="wrapper">
-        <div id="exclouded-outer-css">
+        <div id="exclouded-outer-css" data-name="target">
           <h3>outer stroke : exclouded</h3>
           <div class="box"></div>
           <p>164 x 100</p>
         </div>
-        <div id="exclouded-center-css">
+        <div id="exclouded-center-css" data-name="target">
           <h3>center stroke : exclouded</h3>
           <div class="box"></div>
           <p>154 x 100</p>
         </div>
-        <div id="exclouded-inner-css">
+        <div id="exclouded-inner-css" data-name="target">
           <h3>inner stroke : exclouded</h3>
           <div class="box"></div>
 
